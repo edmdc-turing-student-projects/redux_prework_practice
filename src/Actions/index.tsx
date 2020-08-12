@@ -1,17 +1,6 @@
-const ADD_IDEA = 'ADD_IDEA'
-
-interface Idea {
-  title: string
-  content: string
-  id: number
-}
-
-interface AddIdeaAction {
-  type: typeof ADD_IDEA
-  payload: Idea
-}
-
-type IdeaFormTypes = AddIdeaAction
+import {
+  ADD_IDEA, Idea, IdeaFormTypes
+} from '../types'
 
 export const addIdea = (idea:Idea): IdeaFormTypes => ({
     type: ADD_IDEA,
