@@ -6,7 +6,7 @@ export interface Idea {
   id: number
 }
 
-export interface IdeasState {
+export type appState = {
   ideas: Idea[]
 }
 
@@ -16,4 +16,3 @@ export interface AddIdeaAction {
 }
 
 export type IdeaFormTypes = AddIdeaAction
-
